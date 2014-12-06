@@ -37,6 +37,8 @@ The server list can either be a string, array or object. This is directly based 
   - `replacementHosts`: (default: `[]`) supply additional hostnames for failover. this setting requires a `removeTimeout` duration, however, client will replace dead servers with one from this list instead of simply removing them.
   - `connectionsPerServer`: (default: `1`) use n connections for each server. note that the client already does pipelining on a single connection, you do not need a lot of connections.
   - `enableOfflineQueue`: (default: `true`) if there is no active connection to a specific server, queue commands until we can acquire one.
+  - `keyPrefix`: (default: `''`) prefix all keys with a string, useful for namespacing keys.
+  - `hashLongKeys`: (default: `true`) memcached keys can not be larger than 255 bytes lenght. set this true if you want the client to hash larger keys to fit into 255 character length limit.
 
 ```
 var client = memcached("localhost:11211", { retryDelay: 5000, removeTimeout: 20000 });
