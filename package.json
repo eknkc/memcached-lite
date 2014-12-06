@@ -1,0 +1,26 @@
+{
+  "name": "memcached-lite",
+  "version": "1.0.0",
+  "description": "Extremely fast memcached client with consistent hashing & dead server removal & binary protocol implementation.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eknkc/memcached-lite.git"
+  },
+  "keywords": [
+    "memcached",
+    "client",
+    "fast"
+  ],
+  "author": "Ekin Koc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eknkc/memcached-lite/issues"
+  },
+  "homepage": "https://github.com/eknkc/memcached-lite",
+  "dependencies": {
+    "connection-parse": "0.0.7",
+    "consistent": "^1.0.0",
+    "memcached-protocol": "^1.0.0"
+  }
+}
