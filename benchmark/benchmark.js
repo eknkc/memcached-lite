@@ -14,4 +14,8 @@ suite('basic', function() {
   bench('set', function (next) {
     c.set('settest1' + Math.random(), "VALUE", 100, next);
   });
+
+  bench('incr', function (next) {
+    c.incr('settest1' + Math.random(), 1, 100, next);
+  });
 });
