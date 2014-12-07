@@ -1,6 +1,6 @@
 {
   "name": "memcached-lite",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Extremely fast memcached client with consistent hashing & dead server removal & binary protocol implementation.",
   "main": "index.js",
   "repository": {
